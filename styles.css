@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(199, 193, 186);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.logo {
+  position: sticky;
+  flex-direction: column;
+  justify-content: center;
+  height: 15%;
+  width: 20%;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+
+a {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+a:hover {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+footer {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10rem;
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+}
+header {
+  top: 0;
+  background-color: rgb(91, 89, 88);
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+header nav ul,
+header nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+
+  align-items: baseline;
+  align-items: center;
+}
+/*   margin-left: 98%;
+  margin-top: 2rem; */
+
+header nav ul {
+  gap: 0.5rem;
+}
+footer {
+  top: 0;
+  padding: 1rem 2rem;
+  background-color: rgb(91, 89, 88);
+  height: 8rem;
+  margin-top: 100%;
+  position: sticky;
+}
+#footer-p {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: rgb(199, 193, 186);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu a:hover {
+  color: whitesmoke;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+.burger .line {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(199, 193, 186);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 65ch;
+  text-align: justify;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 4rem;
+}
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: block;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(91, 89, 88);
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+  margin: 1rem;
+}
+
+nav.active .menu a {
+  font-size: 24px;
+  margin: 1rem;
+}
