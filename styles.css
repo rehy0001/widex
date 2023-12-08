@@ -14,11 +14,10 @@ body {
 
 .logo {
   position: sticky;
-  flex-direction: column;
-  justify-content: center;
   height: 15%;
   width: 20%;
-  padding: 1rem 2rem;
+  top: 0.125%;
+  left: 40%;
 }
 
 .logo img {
@@ -49,7 +48,6 @@ a:hover {
 }
 footer {
   font-family: "Times New Roman", Times, serif;
-  margin-top: 10rem;
   margin-bottom: 0;
   text-align: center;
   color: white;
@@ -68,12 +66,7 @@ header nav {
   margin: 0;
   padding: 0;
   padding-bottom: 0.4rem;
-
-  align-items: baseline;
-  align-items: center;
 }
-/*   margin-left: 98%;
-  margin-top: 2rem; */
 
 header nav ul {
   gap: 0.5rem;
@@ -82,7 +75,6 @@ footer {
   top: 0;
   padding: 1rem 2rem;
   background-color: rgb(91, 89, 88);
-  height: 8rem;
   margin-top: 100%;
   position: sticky;
 }
