@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(229, 226, 224);
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url(svg/baggrundtilhearingaids.svg);
+  background-size: 80% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: rgb(91, 89, 88);
+}
+
+.hearingaids_h1 {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.light_h1 {
+  font-weight: lighter;
+}
+
+.hearingaids_ikoner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  gap: 100px;
+  margin-bottom: 300px;
+}
+
+.hearingaids_ikoner img {
+  width: 180px;
+  height: auto;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+/* Mobil */
+@media screen and (max-width: 768px) {
+  /* Ændringer til layoutet for mindre skærme (mobil) */
+  .hearingaids_ikoner {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner på mobile skærme */
+    gap: 10px; /* Afstand mellem billeder */
+    justify-content: center;
+  }
+
+  .hearingaids_ikoner img {
+    width: 100px;
+  }
+}
+#footer-p-service {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-top: auto;
+  margin-top: 8rem;
+}

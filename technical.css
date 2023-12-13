@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e5e2e0;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url(svg/technical_baggrund.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: rgb(91, 89, 88);
+}
+
+.technical_service_bulletins_h1 {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.light_h1 {
+  font-weight: lighter;
+}
+
+.back_knap {
+  margin-left: 720px;
+  margin-top: 20px;
+  width: 70px;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+@media (min-width: 800px) {
+  .grid_1_1_1_1 {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-left: 250px;
+    margin-bottom: 2px;
+  }
+}
+#footer-p-service {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-top: 128px;
+}

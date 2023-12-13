@@ -1,0 +1,56 @@
+/* overskrift */
+.accessories_h1 h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: rgb(91, 89, 88);
+  font-size: 2.5rem;
+  top: 120px;
+  right: 620px;
+  margin-top: 1rem;
+}
+
+/* mapper */
+
+.accessoriefolders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  background-color: #e5e2e0;
+  background-attachment: fixed;
+  background-image: url(svg/Asset6.svg);
+  background-position: center;
+  z-index: 100;
+}
+.accessoriefolders-margin {
+  margin: 5rem;
+}
+
+.folders1 {
+  display: flex;
+  gap: 60px;
+  margin-top: 3rem;
+}
+
+.folders2 {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 3rem;
+}
+#footer-p-service {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+#mussesti-technical-2021 p {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 20px;
+  bottom: 80px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  right: 180px;
+}

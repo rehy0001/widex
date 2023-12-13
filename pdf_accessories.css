@@ -1,0 +1,61 @@
+body {
+  background-color: #e5e2e0;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url(svg/Asset8.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#pdf_accessories {
+  position: relative;
+  width: 800px;
+  height: 1200px;
+  bottom: 380px;
+  left: 400px;
+  z-index: 2;
+}
+
+.currentlyviewing {
+  position: relative;
+  height: auto;
+  width: 200px;
+  left: 100px;
+  top: 100px;
+}
+
+.links {
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 1155px;
+  margin-bottom: 5px;
+  top: 60px;
+  position: relative;
+}
+
+.links p {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  text-decoration: underline;
+}
+
+/* knapper */
+.download {
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: 80px;
+  left: 400px;
+  margin-bottom: 0;
+}
+
+.backknap {
+  width: 65px;
+  height: auto;
+  position: relative;
+  top: 105px;
+  left: 165px;
+  margin-bottom: 0;
+}

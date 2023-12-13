@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <title>Homepage</title>
 </head>
 
 
-<body>
+<body class="overflow-y-hidden">
 
     <header>
+        <div class="index-ghost">
+
+        </div>
         <div class="logo">
-            <a href="index.html"> <img src="WIDEX-logo-beige.svg" alt="logo"></a>
+            <a href="index.html"> <img src="svg/WIDEX-logo-beige.svg" alt="logo"></a>
         </div>
         <nav>
             <div class="burger">
@@ -23,16 +31,46 @@
             </div>
 
             <ul class="menu">
-                <li><a href=".html">XXX</a></li>
-                <li><a href=".html">XXX</a></li>
-                <li><a href=".html">XXX</a></li>
-                <li><a href=".html">XXX</a></li>
+                <li>
+                    <h1>MENU</h1>
+                </li>
+                <li id="search">
+                    <label for="search"></label>
+                    <input id="search" type="text" id="search" name="search"
+                        placeholder="SEARCH....................................................">
+                </li>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="hearingaids.html">Hearing Aids</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="billedeside.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="index-container1">
+
+        <div id="brown-soundwave-sprite-2">
+
+            <img src="svg/index_asset.svg" alt="brown-soundwave">
+
+        </div>
+
+        <div id="index_hearingaid">
+            <img src="høreapparat.svg" alt="index_hearingaid">
+
+        </div>
+        <div id="index_logo_large">
+            <img src="svg/WIDEX-logo-beige.svg" alt="index_logo_large">
+
+        </div>
+
+    </div>
     <footer id="footer-p">This is a draft by KEA pupils of group 15, MMD B</footer>
     <script src="menu.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

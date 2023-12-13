@@ -1,0 +1,137 @@
+body {
+  background-color: rgb(229, 226, 224);
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url(svg/baggrundfactsheets_magnifymoment.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+}
+
+.factsheets_momentmagnify {
+  width: 150px;
+  height: auto;
+  position: relative;
+  top: 15px;
+  left: 100px;
+}
+.mussesti-magnify-moment {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 20px;
+  bottom: 5px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.backknap {
+  width: 65px;
+  height: auto;
+  position: relative;
+  top: 80px;
+  right: 12px;
+}
+
+.downloadknap {
+  width: 100px;
+  height: auto;
+  position: relative;
+  bottom: 150px;
+  left: 210px;
+}
+
+.magnifyfactsheet_h1 {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  left: 575px;
+  color: rgb(91, 89, 88);
+  bottom: 202px;
+}
+
+.light_h1_magnify {
+  font-weight: lighter;
+}
+
+.factsheetmagnify1 {
+  width: 800px;
+  height: 1200px;
+  position: relative;
+  top: -300px;
+  left: 370px;
+  margin-top: 128px;
+}
+
+.pdf_oversigt {
+  position: relative;
+  bottom: 1300px;
+  text-decoration: underline;
+  left: 70px;
+}
+
+.pdf_oversigt div {
+  margin-bottom: 10px; /* Tilføjer en mindre afstand mellem div-elementerne */
+}
+
+.pdf_oversigt p {
+  margin: 0; /* Nulstil margener for at fjerne eventuelle ekstra afstande */
+}
+
+/* Mobil*/
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: 100% auto; /* Justerer baggrundsstørrelsen til mobilvisning */
+  }
+
+  .factsheets_momentmagnify,
+  .backknap,
+  .downloadknap {
+    width: 20%; /* Ændrer bredden af elementerne til mobile enheder */
+    position: static; /* Fjerner relativ positionering for mobilvisning */
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .magnifyfactsheet_h1 {
+    display: block; /* Ændrer til blokdisplay for at tilpasse sig mobilvisning */
+    text-align: center;
+    position: static;
+    margin-top: 20px; /* Tilføjer lidt øverste margen for mobilvisning */
+    left: 0;
+  }
+
+  .factsheetmagnify1 {
+    width: 100%; /* Fylder hele skærmen på mobile enheder */
+    height: auto;
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: 20px; /* Tilføjer lidt øverste margen for mobilvisning */
+  }
+
+  .pdf_oversigt {
+    position: static;
+    top: 0;
+    left: 0;
+    text-align: center; /* Centrerer teksten på mobilvisning */
+  }
+}
+/* FOOTER */
+
+#footer-p-service {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-top: 128px;
+}

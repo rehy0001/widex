@@ -1,0 +1,84 @@
+body {
+  background-color: #e5e2e0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-attachment: fixed;
+  background-image: url(svg/Asset11.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* overskrift */
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: rgb(91, 89, 88);
+  font-size: 3rem;
+}
+
+.dexoverskrift {
+  position: relative;
+  z-index: 3;
+  margin-top: 3rem;
+}
+
+/* knapper */
+
+.backknap {
+  width: 65px;
+  height: auto;
+  position: relative;
+  top: 10px;
+  margin-bottom: 0;
+}
+
+/* mapper */
+
+.dexfolders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+.folders1 {
+  display: flex;
+  gap: 55px;
+  z-index: 2;
+}
+
+.folders2 {
+  display: flex;
+  gap: 60px;
+  z-index: 2;
+}
+
+.folders3 {
+  display: flex;
+  gap: 43px;
+  z-index: 2;
+}
+
+.folders4 {
+  display: flex;
+  gap: 64px;
+  z-index: 2;
+}
+
+/* mussesti */
+
+#mussesti-technical-2021 p {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 20px;
+  bottom: 5px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  right: 630px;
+}

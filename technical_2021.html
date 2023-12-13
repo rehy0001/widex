@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Service Bulletins 2021</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="2021.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="ghost"></div>
+        <div class="logo">
+            <a href="index.html"> <img src="svg/WIDEX-logo-beige.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <h1>MENU</h1>
+                </li>
+                <li id="search">
+                    <label for="search"></label>
+                    <input id="search" type="text" id="search" name="search"
+                        placeholder="SEARCH....................................................">
+                </li>
+                <li><a href=" index.html">Home</a></li>
+                <li><a href="hearingaids.html">Hearing Aids</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="billedeside.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mussesti-technical-2021">
+            <p>Service / Technical Service Bulletins / 2021</p>
+        </div>
+        <div class="technical_service_bulletins_h1">
+            <div class="download">
+                <img src="svg/download.svg" alt="download">
+            </div>
+            <div>
+                <h1>TECHNICAL SERVICE BULLETINS</h1>
+            </div>
+            <div>
+                <h1 class="light_h1">T21_02</h1>
+            </div>
+        </div>
+        <div class="currentlyviewing">
+            <div>
+                <img src="svg/currently_viewing_2021.svg" alt="currentlyviewing">
+            </div>
+            <div class="back_knap">
+                <a href="technical.html"><img src="svg/backknap.svg" alt="backknap"></a>
+            </div>
+        </div>
+        <div>
+            <div class="links">
+                <p>T21_02 - New Tamper Resistant Battery Drawer for EBB3D and MBB3D</p>
+                <p>T21_01 - EVOKE EBB3D new earhook</p>
+            </div>
+        </div>
+        <div id="T21_02">
+            <object data="T21_02.pdf" type="application/pdf" width="100%" height="1200px"></object>
+        </div>
+        <script>
+            const url = 'T21_02';
+            pdfjsLib.getDocument(url).promise.then(function (pdf) {
+                pdf.getPage(1).then(function (page) {
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    const viewport = page.getViewport({ scale: 1.5 });
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    document.getElementById('viewer').appendChild(canvas);
+                    page.render({
+                        canvasContext: context,
+                        viewport: viewport
+                    });
+                });
+            });
+        </script>
+    </main>
+    <footer id="footer-p-service">This is a draft by KEA pupils of group 15, MMD B</footer>
+    <script src="login.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

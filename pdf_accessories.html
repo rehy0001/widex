@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories PDF-viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pdf_accessories.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="ghost"></div>
+        <div class="logo">
+            <a href="index.html"> <img src="svg/WIDEX-logo-beige.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <h1>MENU</h1>
+                </li>
+                <li id="search">
+                    <label for="search"></label>
+                    <input id="search" type="text" id="search" name="search"
+                        placeholder="SEARCH....................................................">
+                </li>
+                <li><a href=" index.html">Home</a></li>
+                <li><a href="hearingaids.html">Hearing Aids</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="billedeside.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="download">
+            <img src="svg/download.svg" alt="download">
+        </div>
+
+
+        <div class="currentlyviewing">
+            <div>
+                <img src="svg/currentlyaccessories.svg" alt="currentlyviewing">
+            </div>
+        </div>
+        <div class="backknap">
+            <a href="soundassist.html"><img src="svg/backknap.svg" alt="backknap"></a>
+        </div>
+
+
+        <div class="links">
+            <p>DEX WIDEX SOUND ASSIST ACCESSORIES</p>
+            <p>DEX WIDEX SOUND ASSIST DATA SHEET</p>
+        </div>
+
+        <div id="pdf_accessories">
+            <object data="accessories.pdf" type="application/pdf" width="100%" height="1200px"></object>
+        </div>
+        <script>
+            const url = 'accessories.pdf';
+            pdfjsLib.getDocument(url).promise.then(function (pdf) {
+                pdf.getPage(1).then(function (page) {
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    const viewport = page.getViewport({ scale: 1.5 });
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    document.getElementById('viewer').appendChild(canvas);
+                    page.render({
+                        canvasContext: context,
+                        viewport: viewport
+                    });
+                });
+            });
+        </script>
+    </main>
+    <footer id="footer-p">This is a draft by KEA pupils of group 15, MMD B</footer>
+    <script src="menu.js"></script>
+</body>
+
+</html>

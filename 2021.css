@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e5e2e0;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-image: url(svg/Asset13.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.download {
+  width: 100px;
+  margin-top: 8px;
+  margin-left: 200px;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: rgb(91, 89, 88);
+}
+
+.technical_service_bulletins_h1 {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.light_h1 {
+  font-weight: lighter;
+}
+
+.currentlyviewing {
+  margin-left: 130px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.back_knap {
+  margin-left: 65px;
+  margin-top: 20px;
+  width: 70px;
+}
+
+#T21_02 {
+  width: 800px;
+  height: 1200px;
+  position: relative;
+  top: -400px;
+  left: 430px;
+  margin-bottom: 40px;
+}
+
+.links {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 1100px;
+  margin-bottom: 5px;
+}
+.links p {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 1100px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#mussesti-technical-2021 p {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(91, 89, 88);
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}

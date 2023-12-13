@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="factsheetsmoment.css">
+    <link rel="stylesheet" href="andenfactmoment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <title>Fact sheets magnifymoment</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="ghost"></div>
+        <div class="logo">
+            <a href="index.html"> <img src="svg/WIDEX-logo-beige.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <h1>MENU</h1>
+                </li>
+                <li id="search">
+                    <label for="search"></label>
+                    <input id="search" type="text" id="search" name="search"
+                        placeholder="SEARCH....................................................">
+                </li>
+                <li><a href=" index.html">Home</a></li>
+                <li><a href="hearingaids.html">Hearing Aids</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="billedeside.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Hearing aids / Magnify & Moment / Fact sheets</p>
+
+        <img src="svg/factsheets_momentmagnify.svg" alt="factsheets_momentmagnify" class="factsheets_momentmagnify">
+
+        <a href="magnifymoment.html"> <img src="svg/backknap.svg" alt="backknap" class="backknap"></a>
+
+        <img src="svg/download.svg" alt="download" class="downloadknap">
+
+
+        <div class="magnifyfactsheet_h1">
+            <h1>MAGNIFY FACT SHEET</h1>
+            <h1 class="light_h1_magnify">110 - 440 </h1>
+        </div>
+
+
+        <object class="factsheetmagnify1" data="pdf/factsheetmagnify2.pdf" type="application/pdf"></object>
+
+        <script>
+
+
+            const url = 'factsheetmagnify1.pdf';
+
+
+            pdfjsLib.getDocument(url).promise.then(function (pdf) {
+
+
+                pdf.getPage(1).then(function (page) {
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    const viewport = page.getViewport({ scale: 1.5 });
+
+
+
+
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+
+
+
+                    document.getElementById('viewer').appendChild(canvas);
+
+
+                    page.render({
+                        canvasContext: context,
+                        viewport: viewport
+                    });
+                });
+            });
+
+
+        </script>
+        <div class="pdf_oversigt">
+            <a href="factsheetsmoment.html">
+                <div>
+                    <p>MAGNIFY FACT SHEET 30-100</p>
+                </div>
+            </a>
+            <a href="andenfactmoment.html">
+                <div>
+                    <p>MAGNIFY FACT SHEET 110-440</p>
+                </div>
+            </a>
+        </div>
+
+    </main>
+    <footer id="footer-p-service">This is a draft by KEA pupils of group 15, MMD B</footer>
+    <script src="menu.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
